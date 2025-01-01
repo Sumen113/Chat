@@ -56,6 +56,7 @@ import { db } from '../lib/firebase';
       userId: user.id,
       userName: user.name,
       content,
+      // server
       timestamp: Date.now(),
     };
 
