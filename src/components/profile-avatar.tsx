@@ -7,9 +7,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-import { format } from 'date-fns';
-import { CodeSquare, FileWarningIcon, Info, LogOut, Settings, UserIcon } from 'lucide-react';
-import countries from '../data/country-data';
+import {LogOut, Settings, UserIcon } from 'lucide-react';
 import LogoutDialog from './logout-dialog';
 import SettingsDialog from './settings-dialog';
 import { useAuthContext } from '../context/auth-context';
@@ -35,39 +33,10 @@ const ProfileAvatar = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-48">
                     <DropdownMenuLabel>{user?.name}</DropdownMenuLabel>
-                    <DropdownMenuLabel className="text-xs font-normal text-muted-foreground -mt-2">
-                        <b>Country:</b> {countries[user?.country]?.name}{' '}
-                        <img className="size-5 inline" src={countries[user?.country]?.image} />
-                        {/* ({countries[user?.country].emoji}) */}
-                    </DropdownMenuLabel>
-                    {user && user.createdAt && user.createdAt.toDate && (
-                        <DropdownMenuLabel className="text-xs font-normal text-muted-foreground -mt-2">
-                            <b>Joined:</b> {format(user?.createdAt?.toDate(), 'd MMM yyyy, h:mm a')}
-                        </DropdownMenuLabel>
-                    )}
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={() => setSettingsOpen(true)}>
                         <Settings /> Settings
                     </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <a href="https://github.com/devXprite/chat-World/" target="_blank">
-                            <CodeSquare className="size-2" />
-                            Source Code
-                        </a>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <a href="https://github.com/devXprite/chat-World/" target="_blank">
-                            <Info className="size-2" />
-                            About
-                        </a>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <a href="https://github.com/devXprite/Chat-World/issues/new/" target="_blank">
-                            <FileWarningIcon className="size-2" />
-                            Report Issue
-                        </a>
-                    </DropdownMenuItem>
-                    <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={() => setLogoutOpen(true)}>
                         <LogOut className="size-2" />
                         Logout

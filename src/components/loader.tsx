@@ -4,15 +4,15 @@ const Loader = () => {
             <svg className="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
-                        <stop offset="0%" stopColor="hsl(313,90%,55%)" />
-                        <stop offset="100%" stopColor="hsl(223,90%,55%)" />
+                        <stop offset="0%" stopColor="hsl(105, 83.10%, 11.60%)" />
+                        <stop offset="100%" stopColor="hsl(123, 90.40%, 55.10%)" />
                         {/* <stop offset="0%" stopColor="#f43f5e" />
                         <stop offset="50%" stopColor="#a855f7" />
                         <stop offset="100%" stopColor="#3b82f6" /> */}
                     </linearGradient>
                     <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="hsl(313,90%,55%)" />
-                        <stop offset="100%" stopColor="hsl(223,90%,55%)" />
+                        <stop offset="0%" stopColor="hsl(115, 90.40%, 55.10%)" />
+                        <stop offset="100%" stopColor="hsl(128, 69.60%, 9.00%)" />
                     </linearGradient>
                 </defs>
                 <circle

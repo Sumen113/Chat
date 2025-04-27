@@ -14,7 +14,7 @@ const Chat = () => {
     return (
         <div className="md:grid grid-cols-[20rem_1fr] h-dvh overflow-hidden">
             <div className="px-4 border-b border-r h-12 grid place-items-center max-md:hidden">
-                <h2 className="text-lg font-semibold text-muted-foreground">Online Users</h2>
+                <h2 className="text-lg font-semibold text-muted-foreground">online rn</h2>
             </div>
             <ChatHeader user={user} setShowUsers={setShowUsers} showUsers={showUsers} />
             <UsersList showUsers={showUsers} />

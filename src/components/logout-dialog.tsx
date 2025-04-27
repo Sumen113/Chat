@@ -22,8 +22,7 @@ const LogoutDialog = ({ open, onOpenChange }: Props) => {
                 <AlertDialogHeader>
                     <AlertDialogTitle>Logout?</AlertDialogTitle>
                     <AlertDialogDescription>
-                        Are you sure you want to logout? If you logout, you can login again by entering your name from
-                        the same browser.
+                    Once you logout you can login with the same username.
                     </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter className="gap-2">

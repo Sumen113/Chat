@@ -19,7 +19,7 @@ const UsersList = ({ showUsers }: Props) => {
             )}
         >
             <ScrollArea className="w-full">
-                <h2 className="md:hidden mt-16 text-center text-lg font-semibold text-muted-foreground px-4">Online Users</h2>
+                <h2 className="md:hidden mt-16 text-center text-lg font-semibold text-muted-foreground px-4">online rn</h2>
 
                 <div className="space-y-3 px-4 py-6">
                     {[...users].map(user => (
